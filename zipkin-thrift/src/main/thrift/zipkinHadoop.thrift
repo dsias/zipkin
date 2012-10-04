@@ -28,3 +28,10 @@ struct SpanServiceName {
   8: list<zipkinCore.BinaryAnnotation> binary_annotations, // any binary annotations
   9: string service_name              // service's name
 }
+
+// dsias - event core api
+struct SpanEvent {
+ 1: i64 trace_id,
+ 2: i64 id,
+ 3: string event_name
+}
